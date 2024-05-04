@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="droupdownClick">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="topnav-right"><a href="signup.html">Sign up</a></li>
+            <li class="topnav-right"><a href="#Sign In">Sign In</a></li>
+            <li class="droupdownIcon"><a href="javascript:void(0);" onclick="droupdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="leftside-col">
+                    <h1 class="large">WELCOME</h1>
+                    <h1 class="large">This is My Website</h1>
+                </div>
+                <form >
+                    <div class="leftside-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" placeholder="Username" type="text">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" placeholder="Password" type="password">
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightside-col">
+                    <div class="vidoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wxrfUzddLHI?si=Bo8iPk_4GIIbBHql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2Header"> Learning Quran </h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                    <div class="box">
+                        <div class="quran">
+                            <img src="quran.png" alt="Quran">
+                        </div>
+                        <label>Quran</label>
+                        <div>
+                            <p>Quran is that the most vital religious book of the Islam religion and therefore the Muslim community. consistent with the Islam religion, the discourses contained within the Quran were first of all expressed by the messenger of Allah named Jabriel to Mohammad Prophet on the direction of Allah.</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="quran">
+                        <img src="quran.png" alt="Quran">
+                    </div>
+                    <label>Hadith</label>
+                    <div>
+                        <p>The Hadith is a unique and an essential source of Islamic History. It is considered to be the second to the Qur’an. It is known to be impossible to understand the Qur’an without looking back to the Hadith; and impossible to explain a Hadith without connecting it to the Qur’an. They both go hand in hand—that said they do have their differences but both are important. The Hadith gives an insight of the preliminary Islamic life. Telling who was around and involved in those times. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="box">
+                    <div class="quran">
+                        <img src="quran.png" alt="Quran">
+                    </div>
+                    <label>Islam</label>
+                    <div>
+                        <p>Islam is a religion without any mythology. Its teachings are simple and intelligible. It is free from superstitions and irrational beliefs. The oneness of Allah, the prophet hood of Muhammad, and the concept of life after death are the basic articles of its faith.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="buttonMore">Learn More</button>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                        <p>The Hadith is a unique and an essential source of Islamic History. It is considered to be the second to the Qur’an. It is known to be impossible to understand the Qur’an without looking back to the Hadith; and impossible to explain a Hadith without connecting it to the Qur’an. They both go hand in hand—that said they do have their differences but both are important. The Hadith gives an insight of the preliminary Islamic life. Telling who was around and involved in those times. </p>
+                    </article>
+                </div>
+                <div class="col-5">
+                    <div class="islogo">
+                        <img src="ii.jpg" alt="islam">
+                    </div>
+                    
+
+                </div>
+            </div>  
+
+        </div>
+
+    </div>
+
+    
+
+    
+    
+    <script>
+        function droupdownMenu() {
+            var x = document.getElementById("droupdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";   
+            } else{
+                x.className = "topnav"
+            }
+        }
+    </script>
+</body>
+</html>

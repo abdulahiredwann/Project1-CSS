@@ -1,0 +1,279 @@
+/* ########Deafualts######### */
+nav,
+header,
+footer {
+    display: block;
+}
+body {
+    line-height: 1;
+    margin: 0;
+    background: rgb(165,223,209);
+    background: linear-gradient(90deg, rgba(165,223,209,1) 55%, rgba(172,232,245,1) 98%, rgba(2,0,36,1) 100%);
+}
+
+label {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+.fuad h1{
+    color: green;
+}
+
+article p {
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+.container {
+    width: 100%;
+    height: 500;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ####### Nav Bar ########## */
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+ul.topnav li {
+    list-style: none;
+    float: left;
+    /* padding: 12px;
+    margin: 10px; */
+
+}
+
+ul.topnav li.topnav-right {
+    list-style: none;
+    float: right;
+    /* padding: 12px;
+    margin: 10px; */
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+    margin: auto;
+    
+}
+
+ul.topnav li.droupdownIcon {
+    display: none;
+}
+
+/* ###Custom Style## */
+#section-1-gradient {
+    background: linear-gradient(to bottom, #33ccff 0%, #00cc66 100%);
+}
+
+div.box {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 50px 1px rgba(0,0,0,.15),
+        0 2px 30px 0 rgba(0,0,0,.1);
+    margin: 12px;
+    padding-top: 8px;
+    border-radius: 7px;
+    width: 400px;
+    height: fit-content;
+}
+
+
+
+.leftside-col {
+    margin-left: 20%;
+    margin-left: 10%;
+}
+.rightside-col {
+    margin-right: 12%;
+    margin-left: 12%;
+}
+
+h1.large {
+    color: white;
+    font-size: 56px;
+    margin: 0;
+    line-height: 1;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button.buttonMore {
+    display: block;
+    margin: auto;
+}
+
+input[type="text"] ,input[type="password"]{
+    font-size: 20px;
+    width: 350px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+
+}
+div.islogo img {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    width: auto;
+    height: 300;
+    box-shadow: -2px -2px 55px 2px rgba(0, 0, 0, .15),2px 2px 55px 2px rgba(0, 0, 0, 1) ;
+}
+ 
+
+form h2 {
+    color: white;
+}
+
+/* #####Mobile######### */
+@media screen and (max-width: 680px) {
+    .container{
+        height: 650px;
+    }
+    ul.topnav:not(.responsive) li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav:not(.responsive) li.droupdownIcon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.droupdownIcon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    h1.large {
+        font-size: 30px;
+    }
+
+    article p {
+        font-size: 25px;
+    }
+    .col-6,
+    .col-7,
+    .col-5,
+    .col-4 {
+        width: 100%;
+        margin: 0;
+    }
+    div.islogo img{
+        width: 100%;
+        padding: 10px;
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
+    } 
+
+    div.leftside-col,
+    div.rightside-col{
+        margin: 15px;
+    }
+    input[type="text"] ,input[type="password"]{
+        font-size: 20px;
+        width: 150px;
+        min-width: 100px;
+        padding: 5px;
+        border-radius: 7px;
+    
+    }
+   
+   .vidoContainer iframe{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0;
+    overflow: hidden;
+   }
+}
